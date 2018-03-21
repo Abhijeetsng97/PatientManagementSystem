@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Patient Billing Software</string>
+    <string name="auth_success">Authentication Success!!</string>
+    <string name="auth_failed">Authentication Failed!!</string>
+</resources>

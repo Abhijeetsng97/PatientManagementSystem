@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello,"
+        android:id="@+id/hello"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/emp_name"
+        android:layout_below="@id/hello"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/emp_name"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/temp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email For Password Reset"
+            android:id="@+id/input_email_reset"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@+id/temp"
+        android:layout_centerHorizontal="true"
+        android:text="Reset Password"
+        android:id="@+id/reset_password"
+        android:onClick="ResetPassword"
+        android:padding="12dp"
+        android:background="@drawable/white_rounded_button"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Sign Out"
+        android:id="@+id/sign_out"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/reset_password"
+        android:onClick="Login"
+        android:padding="12dp"
+        android:background="@drawable/white_rounded_button"/>
+
+</RelativeLayout>
